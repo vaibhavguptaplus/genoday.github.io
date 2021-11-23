@@ -1,0 +1,778 @@
+{% load static %}
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrer policy="no-referrer" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    
+    
+    
+    <link rel="stylesheet" href="{% static 'css/typing.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.convform.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+        integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+        crossorigin="anonymous" referrer policy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="	https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" crossorigin="anonymous"></script>
+    
+    <script src="	https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{%static 'js/jquery.convform.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.convform.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+
+    
+    <!-- Load TensorFlow.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <!-- Load the coco-ssd model. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+        integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+        crossorigin="anonymous" referrer policy="no-referrer"></script>
+
+        
+       
+
+
+       
+    
+    <script src="{% static 'js/main.js' %}"></script>
+    <title>Genoday Technologies</title>
+</head>
+
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<img src="{% static 'images/icons/chatbox-icon.svg' %}" />
+</div>
+
+<div class="chat_box .active">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="POST" class="hidden">
+        
+      <div data-conv-question="Hello! How can I help you" name="category">
+        <input type="text" name="nameC" data-conv-question="Please, Enter your name">
+        <input type="text" data-conv-question="Hi {nameC}, <br> It's a pleasure to meet you." data-no-answer="true">
+        <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">  
+        <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+        <input name="emailC"data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">  
+        <div data-conv-question="Thankyou For Yor reaching to us we will contact you soon!!! Please click the Arrow For Confirmation" name="category"></div>  
+    </div>
+
+      
+          
+        <!-- </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+        </div>
+      </div> -->
+
+      
+
+     
+
+      
+
+      <select data-conv-question="Thankyou For Yor reaching to us we will contact you soon!!! Please click the Arrow For Confirmation" name="category">
+        <option value="Yes">Conform</option>
+      </select> -->
+      
+    
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+    <!-- ********************************************Navbar Start************************************ -->
+   
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container text-uppercase ">
+                <a class="navbar-brand font-weight-bold text-white" href="#">Genoday Technologies</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="fa fa-bars"></div>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto text-uppercase ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Service</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link location" href="#location">Location</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    
+    <!-- Navbar End -->
+    <!-- ********************************************Navbar End***************************************-->
+    <!-- *****************************************************Header start*********************************** -->
+    <section class="home" id="home">
+
+        <div class="icons">
+            <i class="fa fa-apple"></i>
+            <i class="fa fa-android"></i>
+            <i class="fa fa-windows"></i>
+        </div>
+        <h1 class="banner">web design & development service</h1>
+        <div class="slider">
+            <div class="text"></div>
+        </div><br><br>
+        <div class="cta-div">
+            <a href="#contact" class="contact">CONTACT US</a>
+            <a href="#about" class="about">ABOUT US</a>
+        </div><br><br>
+        <div class="social-networks">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <br><br><br><br> <br><br><br><br>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+
+        <div class="fa fa-cog nut1"></div>
+        <div class="fa fa-cog nut2"></div>
+    </section>
+
+
+
+    <!-- ***************************************************header End************************************ -->
+   
+        <div class="heading" id="about">ABOUT US</div>
+        
+      
+    </class>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active slide-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">Buid A mobile App</h1>
+                            <p class="animate__animated animate__lightSpeedInLeft animate__delay-2s">Lorem Ipsum is
+                                simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <button type="button" class="animate__animated animate__jackInTheBox animate__delay-5s">Read
+                                More</button>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="img-box">
+                                <img src="{% static 'images/pic-1.png' %}"
+                                    class="pic1 animate__animated animate__zoomIn animate__delay-1s" />
+                                <img src="{% static 'images/pic-2.png' %}"
+                                    class="pic2 animate__animated  animate__fadeInLeft animate__delay-4s" />
+                                <img src="{% static 'images/pic-3.png' %}"
+                                    class="pic3 animate__animated animate__fadeInUp animate__delay-3s" />
+                                <img src="{% static 'images/pic-4.png' %}"
+                                    class="pic4 animate__animated animate__fadeInDown animate__delay-3s" />
+                                <img src="{% static 'images/pic-5.png' %}"
+                                    class="pic5 animate__animated animate__fadeInRight animate__delay-4s" />
+                                <img src="{% static 'images/pic-6.png' %}"
+                                    class="pic6 animate__animated animate__jackInTheBox animate__delay-5s" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item slide-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">Buid A mobile App</h1>
+                            <p class="animate__animated animate__lightSpeedInLeft animate__delay-2s">Lorem Ipsum is
+                                simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <button type="button" class="animate__animated animate__jackInTheBox animate__delay-5s">Read
+                                More</button>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="img-box">
+                                <img src="{% static 'images/img-1.png' %}"
+                                    class="img1 animate__animated animate__zoomIn animate__delay-1s" />
+                                <img src="{% static 'images/img-2.png' %}"
+                                    class="img2 animate__animated animate__fadeInLeft animate__delay-4s" />
+                                <img src="{% static 'images/img-3.png' %}"
+                                    class="img3 animate__animated animate__zoomIn animate__delay-3s" />
+                                <img src="{% static 'images/img-4.png' %}"
+                                    class="img4 animate__animated animate__fadeInDown animate__delay-3s" />
+                                <img src="{% static 'images/img-5.png' %}"
+                                    class="img5 animate__animated animate__fadeInRight animate__delay-4s" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- **********************************************Project Done Start****************************** -->
+    <section class="project-work">
+
+
+      
+            <div class="heading" style="font-size: 1.2rem;">MORE THAN 2000 WEBSITES CREATED</div>
+
+       
+
+        <div class=" count-wrapper contrainer d-flex justify-content-around align-items-center text-center">
+            <div>
+                <h1 class="count">1500</h1>
+                <p>CMS Installation</p>
+            </div>
+            <div>
+                <h1 class="count">2500</h1>
+                <p>Award Won</p>
+            </div>
+            <div>
+                <h1 class="count">700</h1>
+                <p>Happy Clients</p>
+            </div>
+            <div>
+                <h1 class="count">500</h1>
+                <p>Working On</p>
+            </div>
+        </div>
+    </section>
+<br><br><br>
+
+
+    <!-- **********************************************Project Done End****************************** -->
+    <!-- /***************************Services Start***************************/ -->
+    <section class="active-area" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <div class="heading"><b>SERVICES</div>
+                        <p>You can ask the question regarding the issues we will <br>solve together fore sure </p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <h3>Support</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <h3>Marketing</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <h3>Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-diamond"></i>
+                        </div>
+                        <h3>Design</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- /***************************Services End***************************/ -->
+    <!-- /***************************Work start***************************/ -->
+    
+    <section class="work" id="work">
+        <div class="heading">Gallery</div>
+        <br>
+    <br>
+    <br>
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png' %}" title="Hello World">
+                            <img src="{% static 'images/image1.png '%}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png' %}" title="Hello World">
+                            <img src="{% static 'images/image1.png' %}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png' %}" title="Hello World">
+                            <img src="{% static 'images/image1.png' %}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png'%}" title="Hello World">
+                            <img src="{% static 'images/image1.png' %}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutter">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png' %}" title="Hello World">
+                            <img src="{% static 'images/image1.png' %}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png' %}" title="Hello World">
+                            <img src="{% static 'images/image1.png' %}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png' %}" title="Hello World">
+                            <img src="{% static 'images/image1.png' %}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="img-wrapper">
+                        <a href="{% static 'images/image1.png' %}" title="Hello World">
+                            <img src="{% static 'images/image1.png' %}" alt="image" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <!-- /***************************work End***************************/ -->
+
+    <section id="faq" class="faq">
+        <div class="heading">FAQ</div>
+        <br>
+    <br>
+   
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                        <div class="image">
+                            <img src="{% static 'images/faq.jpg' %}" alt="">
+                            
+                        </div>
+                </div>
+            <div class="col-md-6">
+                        <div class="accordion-container">
+            
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <span>+</span>
+                                    <h3>How much will it cost?</h3>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi atque possimus ipsum quae
+                                        error ullam reiciendis in iste maiores nulla. Impedit nam praesentium omnis cupiditate
+                                        excepturi natus magnam sunt deleniti!</p>
+                                </div>
+                            </div>
+            
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <span>+</span>
+                                    <h3>How To update website?</h3>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi atque possimus ipsum quae
+                                        error ullam reiciendis in iste maiores nulla. Impedit nam praesentium omnis cupiditate
+                                        excepturi natus magnam sunt deleniti!</p>
+                                </div>
+                            </div>
+            
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <span>+</span>
+                                    <h3>is domain provided free?</h3>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi atque possimus ipsum quae
+                                        error ullam reiciendis in iste maiores nulla. Impedit nam praesentium omnis cupiditate
+                                        excepturi natus magnam sunt deleniti!</p>
+                                </div>
+                            </div>
+            
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <span>+</span>
+                                    <h3>how long it takes to design?</h3>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi atque possimus ipsum quae
+                                        error ullam reiciendis in iste maiores nulla. Impedit nam praesentium omnis cupiditate
+                                        excepturi natus magnam sunt deleniti!</p>
+                                </div>
+                            </div>
+            
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <span>+</span>
+                                    <h3>is it seo freindly?</h3>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi atque possimus ipsum quae
+                                        error ullam reiciendis in iste maiores nulla. Impedit nam praesentium omnis cupiditate
+                                        excepturi natus magnam sunt deleniti!</p>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <br>
+    <br>
+    <!-- FAQ section ends -->
+    <!-- **********************************************Our Customers Feedback start****************************** -->
+    <section class="testimonial-wrapper">
+        <div class="heading">Our Happy Clients</div>
+        <div class="container testimonial">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="{% static 'images/img-1.png' %}">
+                    
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi atque possimus ipsum quae
+                    error ullam reiciendis in iste maiores nulla. Impedit nam praesentium omnis cupiditate
+                    excepturi natus magnam sunt deleniti!</p>
+                <h4>Someone Famous <br><span>Creative Director</span></h4>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="{% static 'images/img-1.png' %}">
+                    
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi atque possimus ipsum quae
+                    error ullam reiciendis in iste maiores nulla. Impedit nam praesentium omnis cupiditate
+                    excepturi natus magnam sunt deleniti!</p>
+                <h4>Someone Famous<br><span>Creative Director</span></h4>
+            </div>
+        </div>
+        
+    </section>
+   <br><br><br>
+<!-- **********************************************Our Customers Feedback End****************************** -->
+<div class="heading" id="contact">Contact Us</div>
+     <section id="contact" class="contact">
+    
+    <div class="container contact-wrapper">
+      
+        <br>
+    <br>
+    <br>
+    <div class="contact-wrapper">
+        <span class="big-circle"></span>
+        <img src="{% static 'images/shape.png' %}" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text-contact">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolorum adipisci recusandae praesentium dicta!
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <img src="{% static 'images/location.png' %}" class="icon" alt="" />
+                <p>92 Cherry Drive Uniondale, NY 11553</p>
+              </div>
+              <div class="information">
+                <img src="{% static 'images/email.png' %}" class="icon" alt="" />
+                <p>lorem@ipsum.com</p>
+              </div>
+              <div class="information">
+                <img src="{% static 'images/phone.png' %}" class="icon" alt="" />
+                <p>123-456-789</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="" autocomplete="off" method="post">
+            {% csrf_token %}
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</section>
+
+    <!-- contact section ends -->
+    <!-- **********************************************NewsLetter start****************************** -->
+
+</section> <!--****************** Map Start******************-->
+
+<div class="map" id="location">
+    <iframe class="googlemap"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487295.02532044525!2d78.12785129924684!3d17.41215307568293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1628092803104!5m2!1sen!2sin" 
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section> <!--****************** Map ENd******************-->
+
+
+<!-- **********************************************NewsLetter  End****************************** -->
+    <footer class="footersection" id="footerdiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 footer-div">
+                    <div>
+                        <h3>About Genoday Technologies </h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
+                    <div>
+                        <h3>NAVIGATION LINK</h3>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-12 col-12 footer-div">
+                    <div>
+                        <h3>NEWSLETTER</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    
+                            <div class="container newsletter-main">
+                                <div class="row">
+                                    <div class="col-lg-12  col-12">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control news-letter" placeholder="Your Email">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">Subscribe</span>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="mt-5 text-center">
+                <p>Copyright ©️2021 All rights reserved| This template is made with love by Khushboo Gupta</p>
+    
+            </div>
+            <div class="scrollttop float-right">
+                <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn">
+            </div>
+            </div>
+    
+        </div>
+    </footer>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 2000
+        });
+         
+    //arrow
+    myButton=document.getElementById("myBtn");
+    window.onscroll=function(){scrollFunction()};
+    function scrollFunction(){
+        if(document.body.scrollTop>20 || document.documentElement.scrollTop>20 ){
+            myButton.style.display="block";
+        }else{
+            myButton.style.display="none";
+        }
+    
+    }
+    function topFunction(){
+        document.body.scrollTop=0;//for safari
+        document.documentElement.scrollTop=0;//for chrome, Firefox ,IE and Opera
+    }
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+    </script>
+</body>
+
+</html>
